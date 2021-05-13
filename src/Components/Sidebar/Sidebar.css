@@ -49,13 +49,11 @@
 }
 
 .links__sidebar {
-  /* display: flex; */
   border-radius: 50%;
   border: 1px solid rgb(214, 214, 214);
   overflow: hidden;
   right: -300px;
   align-items: center;
-  /* animation: slide 15s linear infinite; */
 }
 
 .header {

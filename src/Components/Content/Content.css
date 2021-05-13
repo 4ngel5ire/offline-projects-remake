@@ -3,4 +3,25 @@
   flex: 1;
   background-color: cornflowerblue;
   height: 100vh;
+  position: absolute;
+  width: 100vw;
+  left: 32.5%;
+  transition: left 0.3s ease 0s;
 }
+
+.content:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+  left: 24.5%;
+  transition: left 0.3s ease 0s;
+  /* animation: slide 0.3s linear forwards; */
+}
+
+/* @keyframes slide {
+  0% {
+    transform: translate(0, 75%);
+  }
+  100% {
+    transform: translate(0, 85%);
+  }
+} */
