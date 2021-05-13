@@ -8,7 +8,7 @@
 
 .marquee {
   padding: 0;
-  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
   text-orientation: mixed;
   align-items: flex-end;
   /* box-sizing: border-box; */
@@ -20,24 +20,24 @@
 
 .marquee p {
   margin-left: 0;
-  animation: marquee 15s linear infinite;
+  animation: marquee 95s linear infinite;
 }
 
 @keyframes marquee {
   from {
-    margin-top: 0%;
+    margin-top: 100%;
   }
   to {
-    margin-top: 100%;
+    margin-top: -725%;
   }
 }
 
 @keyframes slide {
   0% {
-    transform: translate(0, 0);
+    transform: translate(-100%, 0);
   }
   100% {
-    transform: translate(-100%, 0);
+    transform: translate(0, 0);
   }
 }
 
