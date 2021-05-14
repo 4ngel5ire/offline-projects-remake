@@ -1,13 +1,11 @@
 .sidebar {
+  width: 32.5vw;
+  position: fixed;
   display: flex;
   flex-direction: row;
   flex: 0 0 32.5%;
   background-color: rgb(16, 15, 20);
-  color: #fff;
-  /* padding-top: 1.5rem; */
-  /* margin: 0px auto; */
-  /* box-sizing: border-box; */
-  /* align-items: center; */
+  color: rgb(214, 214, 214);
 }
 
 .marquee {
@@ -15,16 +13,16 @@
   writing-mode: vertical-rl;
   text-orientation: mixed;
   align-items: flex-end;
-  /* box-sizing: border-box; */
   white-space: nowrap;
   overflow: hidden;
   margin-top: 0%;
   height: 100vh;
+  font-family: "Moonbase Alpha";
 }
 
 .marquee p {
   margin-left: 0;
-  animation: marquee 95s linear infinite;
+  animation: marquee 90s linear infinite;
 }
 
 @keyframes marquee {
@@ -32,7 +30,7 @@
     margin-top: 100%;
   }
   to {
-    margin-top: -725%;
+    margin-top: -650%;
   }
 }
 
@@ -59,10 +57,11 @@
   align-items: baseline;
   justify-content: center;
   flex-direction: column;
+  font-family: "Moonbase Alpha";
 }
 
 .links__sidebar__main {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   text-decoration: none;
   border-bottom: 2px solid rgb(214, 214, 214);
   transition: opacity 0.3s ease 0s;
@@ -84,8 +83,6 @@
   border: 1px solid rgb(214, 214, 214);
   left: -100px;
   pointer-events: none;
-  /* overflow: hidden; */
-  /* align-items: center; */
 }
 
 .header {
@@ -93,6 +90,11 @@
   flex-direction: row;
   flex-flow: row wrap;
   justify-content: space-between;
+}
+
+.header__img {
+  height: 3rem;
+  padding-right: 1.5rem;
 }
 
 .title {
@@ -114,12 +116,31 @@
 }
 
 .bottom {
+  font-family: Optima;
+  font-weight: 600;
+  font-size: 0.87rem;
   display: flex;
   flex-direction: column;
+  padding-right: 1.5rem;
 }
 
 .bottom__title,
-.bottom__subtitle,
-.bottom__links {
+.bottom__subtitle {
   margin-bottom: 1rem;
+}
+
+.bottom__links {
+  margin-bottom: 1.5rem;
+}
+
+.bottom__links__indiv {
+  color: rgb(241, 199, 3);
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+  padding-right: 0.2rem;
+}
+
+.bottom__title__ud {
+  text-decoration: underline;
 }

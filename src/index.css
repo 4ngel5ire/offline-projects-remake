@@ -1,3 +1,13 @@
 body {
   margin: 0;
+  padding: 0;
+  font-family: Optima, Helvetica, san-serif;
+  color: rgb(16, 15, 20);
+  background-color: rgb(214, 214, 214);
+  transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+
+@font-face {
+  font-family: "Moonbase Alpha";
+  src: url("./fonts/MoonbaseAlpha.ttf") format("truetype");
 }

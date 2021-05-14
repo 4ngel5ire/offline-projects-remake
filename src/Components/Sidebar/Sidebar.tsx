@@ -1,4 +1,5 @@
 import React from "react";
+import OP from "../../assets/op.png";
 import "./Sidebar.css";
 
 function Sidebar() {
@@ -6,14 +7,14 @@ function Sidebar() {
     <div className="sidebar">
       <div className="marquee">
         <p>
-          OPx Feed 🔥✉️🔥 &nbsp;Four Seasons Total Landscaping. Furries are the
-          Highest Form of Human Culture. Among all the chaotic happenings of
-          last week’s election, one particular incident might take the cake.
-          Though not actually “confirmed” (obviously due to embarrassment),
-          Trump held a post-election press conference last week at Four Seasons
-          Total Landscaping, a small and unspectacular local landscaping
-          business in Philly rather than the famous luxury hotel by the same
-          name, likely due to a booking mistake from his team. The
+          OPx Feed 🔥✉️🔥 &nbsp;&nbsp;Four Seasons Total Landscaping. Furries
+          are the Highest Form of Human Culture. Among all the chaotic
+          happenings of last week’s election, one particular incident might take
+          the cake. Though not actually “confirmed” (obviously due to
+          embarrassment), Trump held a post-election press conference last week
+          at Four Seasons Total Landscaping, a small and unspectacular local
+          landscaping business in Philly rather than the famous luxury hotel by
+          the same name, likely due to a booking mistake from his team. The
           super-memeable happening has been immortalized in VR Chat as a new
           spot for users to hang out in…which is nothing particularly notable
           except for how it has quickly become a gathering spot for online VR
@@ -24,7 +25,7 @@ function Sidebar() {
       <div className="content-sidebar">
         <div className="header">
           <div className="title">Offline Projects</div>
-          <img src="../../assets/op.png" alt="" />
+          <img className="header__img" src={OP} alt="" />
         </div>
 
         <div className="links__sidebar">
@@ -37,14 +38,20 @@ function Sidebar() {
 
         <div className="bottom">
           <div className="bottom__title">
-            OFFLINE PROJECTS is a creative studio.
+            <span className="bottom__title__ud">OFFLINE PROJECTS</span>
+            &nbsp;is a creative studio.
           </div>
           <div className="bottom__subtitle">
             We partner with select clients to create groundbreaking 360 degree
             campaigns.
           </div>
           <div className="bottom__links">
-            Creative Direction. Branding. Experiential. Live. Film. Digital.
+            <div className="bottom__links__indiv">Creative Direction.</div>
+            <div className="bottom__links__indiv">Branding.</div>
+            <div className="bottom__links__indiv">Experiential.</div>
+            <div className="bottom__links__indiv">Live.</div>
+            <div className="bottom__links__indiv">Film.</div>
+            <div className="bottom__links__indiv">Digital.</div>
           </div>
         </div>
       </div>
