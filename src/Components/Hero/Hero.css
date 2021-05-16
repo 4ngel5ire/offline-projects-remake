@@ -1,0 +1,86 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  opacity: 1;
+  transition: opacity 0.3s ease 0s;
+  margin-bottom: 3.5rem;
+}
+
+.hero:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s ease 0s;
+}
+
+.hero img {
+  max-width: 35vw;
+  padding-left: 1rem;
+}
+
+.hero__text__ctn {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.hero__text__title {
+  border-bottom: 2px solid black;
+  margin-bottom: 0.5rem;
+  align-items: flex-end;
+  font-family: "Moonbase Alpha";
+  box-sizing: border-box;
+  font-size: 2.2rem;
+  margin-bottom: -0.4rem;
+  font-weight: normal;
+}
+.hero__text__subctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.hero__text__subtitle {
+  display: flex;
+  flex-basis: 33%;
+  font-family: Optima, Helvetica, san-serif;
+  font-weight: bold;
+  flex-basis: 33%;
+  font-size: 1.25rem;
+}
+
+.hero__text__p__ctn {
+  display: flex;
+  flex-basis: 66%;
+  flex-direction: column;
+}
+
+.hero__text__p__title {
+  font-family: Optima, Helvetica, san-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 22.5px;
+}
+
+.hero__text__p__content {
+  font-family: Optima, Helvetica, san-serif;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-top: 0.75rem;
+  position: relative;
+  max-height: 5rem;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.hero__text__p__content::after {
+  display: block;
+  position: absolute;
+  inset: 0px;
+  content: "";
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(224, 224, 224, 0) 50%,
+    rgb(214, 214, 214) 100%
+  );
+}
